@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>최원빈 | 기계시스템설계, 무인기개발 포트폴리오</title>
+  <meta name="description" content="설계부터 시뮬레이션, 실기체 검증까지 직접 해 본 항공우주공학 전공 신입 최원빈의 포트폴리오">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 공통 GNB -->
+  <header class="gnb">
+    <div class="container gnb-inner">
+      <a class="logo" href="#/home">최원빈<span>Portfolio</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="gnb-menu" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="gnb-menu" class="gnb-menu" aria-label="주요 메뉴">
+        <a href="#/about" data-nav="about">소개</a>
+        <a href="#/projects" data-nav="projects">프로젝트</a>
+        <a href="#/experience" data-nav="experience">경험</a>
+        <a href="#/skills" data-nav="skills">역량</a>
+        <a href="#/fit" data-nav="fit">직무 적합성</a>
+        <a href="#/contact" data-nav="contact">연락처</a>
+        <a class="btn btn-primary btn-sm gnb-cta" data-resume href="#" target="_blank" rel="noopener">이력서 PDF</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ===================== 1. 홈 ===================== -->
+    <section class="page" data-page="home">
+      <div class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="eyebrow">기계시스템설계 / 무인기개발 신입</p>
+            <h1>설계부터 시뮬레이션,<br>실기체 검증까지 직접 해 본<br>지원자 최원빈입니다</h1>
+            <p class="lead">세종대학교 항공우주공학과 2027년 2월 졸업예정. CATIA로 만든 물성값을 시뮬레이션에 넣고, 계산한 값을 실측으로 확인하는 방식으로 일합니다.</p>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="#/projects">프로젝트 보기</a>
+              <a class="btn btn-ghost" data-resume href="#" target="_blank" rel="noopener">이력서 PDF</a>
+            </div>
+          </div>
+          <figure class="hero-media">
+            <img src="assets/img/precision_landing_p.gif" alt="Gazebo 시뮬레이션에서 F450 드론이 착륙 패드로 정밀 착륙하는 장면">
+            <figcaption>F450 비전 정밀착륙, Gazebo 시뮬레이션</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="container">
+        <section class="section">
+          <h2 class="sec-title">숫자로 보는 결과</h2>
+          <div class="metrics">
+            <a class="metric-card" href="#/projects/f450-landing">
+              <strong>0.0989<small>px</small></strong>
+              <span>웹캠 카메라 보정 RMS 오차</span>
+              <em>F450 비전 정밀착륙 →</em>
+            </a>
+            <a class="metric-card" href="#/projects/gyrocopter">
+              <strong>1.3 → 1.0<small>kg</small></strong>
+              <span>자이로콥터 기체 경량화</span>
+              <em>자이로콥터 대회 →</em>
+            </a>
+            <a class="metric-card" href="#/projects/water-rocket">
+              <strong>160.7<small>ms</small></strong>
+              <span>사출 지연 예측, 실측 167ms</span>
+              <em>탁구공 사출 물로켓 →</em>
+            </a>
+            <a class="metric-card" href="#/experience">
+              <strong>21<small>개월</small></strong>
+              <span>공군 항공장구병 정비 복무</span>
+              <em>경험 →</em>
+            </a>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="sec-head">
+            <h2 class="sec-title">대표 프로젝트</h2>
+            <a class="link-more" href="#/projects">전체 프로젝트 보기 →</a>
+          </div>
+          <div class="card-grid" id="featured"></div>
+        </section>
+
+        <section class="section">
+          <div class="sec-head">
+            <h2 class="sec-title">핵심 역량</h2>
+            <a class="link-more" href="#/skills">역량 자세히 보기 →</a>
+          </div>
+          <div class="three-col">
+            <div class="info-card">
+              <h3>설계, 모델링</h3>
+              <p class="tools">CATIA V5, 3DEXPERIENCE, 3D 프린팅</p>
+              <p>로터 허브, 사출 장치를 설계하고 실측 질량으로 무게중심과 관성을 구했습니다.</p>
+            </div>
+            <div class="info-card">
+              <h3>해석, 시뮬레이션</h3>
+              <p class="tools">MATLAB/Simulink, Gazebo, OpenRocket</p>
+              <p>모터부터 6자유도까지 동역학 모델을 만들고 이론값과 맞춰 검증했습니다.</p>
+            </div>
+            <div class="info-card">
+              <h3>비행제어, 자율비행</h3>
+              <p class="tools">PX4, ROS2, Python, Arduino</p>
+              <p>캐스케이드 제어기와 상태머신 미션을 설계하고 SITL로 확인했습니다.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- ===================== 2. 소개 ===================== -->
+    <section class="page" data-page="about" hidden>
+      <div class="container">
+        <header class="page-head">
+          <h1>소개</h1>
+          <p>맡은 자리는 내 것처럼 챙기는 항공우주공학 전공자입니다.</p>
+        </header>
+
+        <section class="section profile">
+          <div class="profile-photo" role="img" aria-label="프로필 사진 자리">
+            <span>사진</span>
+          </div>
+          <dl class="profile-table">
+            <div><dt>지원 분야</dt><dd>기계시스템설계 / 무인기개발 (신입)</dd></div>
+            <div><dt>학력</dt><dd>세종대학교 항공우주공학과, 2027.02 졸업예정, 3.59 / 4.5</dd></div>
+            <div><dt>병역</dt><dd>공군 병장 만기전역, 제10전투비행단 항공장구병 (2022.04 ~ 2024.01)</dd></div>
+            <div><dt>어학</dt><dd>TOEIC 770, TOEIC Speaking IH</dd></div>
+            <div><dt>자격</dt><dd>운전면허 2종 보통</dd></div>
+            <div><dt>특기</dt><dd>CATIA 3D 모델링</dd></div>
+          </dl>
+        </section>
+
+        <section class="section story">
+          <div>
+            <h2 class="sec-title">처음 만든 비행기가 떨어진 날</h2>
+            <p>고등학교 1학년 때 광나루 RC비행장에서 모형 비행기를 접했습니다. 고3 때는 폼보드로 Cessna 172 모형기를 직접 만들어 날렸지만 추락했습니다.</p>
+            <p>왜 떨어졌는지 그때는 설명할 수 없었고, 그 이유를 알고 싶어서 항공우주공학과에 진학했습니다. 지금은 설계값을 계산하고 실측으로 확인하는 일을 가장 좋아합니다.</p>
+          </div>
+          <div class="ph story-media" role="img" aria-label="모형기 사진 자리"><span>모형기 사진 (있으면 추가)</span></div>
+        </section>
+
+        <section class="section">
+          <h2 class="sec-title">일하는 방식</h2>
+          <div class="three-col">
+            <a class="info-card link-card" href="#/projects/water-rocket">
+              <h3>직접 재고 확인합니다</h3>
+              <p>사출 지연을 단계별로 계산해 160.7ms로 예측하고, 240fps 슬로모션으로 167ms를 실측해 코드에 반영했습니다.</p>
+              <em>물로켓 보기 →</em>
+            </a>
+            <a class="info-card link-card" href="#/experience">
+              <h3>맡은 자리를 챙깁니다</h3>
+              <p>비행 1시간 전 조종사 산소마스크의 고무링 끼임을 찾아 교체하고 재시험해 정상 비행을 지원했습니다.</p>
+              <em>경험 보기 →</em>
+            </a>
+            <a class="info-card link-card" href="#/projects/gyrocopter">
+              <h3>팀의 설계를 맞춥니다</h3>
+              <p>파트별로 만든 부품을 합치니 1.3kg이었습니다. 주차별 설계 공유를 제안해 1.0kg까지 줄였습니다.</p>
+              <em>자이로콥터 보기 →</em>
+            </a>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- ===================== 3. 프로젝트 목록 ===================== -->
+    <section class="page" data-page="projects" hidden>
+      <div class="container">
+        <header class="page-head">
+          <h1>프로젝트</h1>
+          <p>모든 프로젝트를 목표, 내 역할, 진행 과정, 수치 결과 순서로 정리했습니다.</p>
+        </header>
+        <div class="chips" role="group" aria-label="프로젝트 필터">
+          <button type="button" class="chip" data-filter="all" aria-pressed="true">전체</button>
+          <button type="button" class="chip" data-filter="design" aria-pressed="false">설계, 모델링</button>
+          <button type="button" class="chip" data-filter="sim" aria-pressed="false">시뮬레이션</button>
+          <button type="button" class="chip" data-filter="ctrl" aria-pressed="false">비행제어</button>
+          <button type="button" class="chip" data-filter="contest" aria-pressed="false">대회</button>
+        </div>
+        <div class="card-grid" id="project-grid"></div>
+        <p class="empty" id="project-empty" hidden>이 분류에 해당하는 프로젝트가 없습니다.</p>
+      </div>
+    </section>
+
+    <!-- ===================== 4. 프로젝트 상세 (JS로 채움) ===================== -->
+    <section class="page" data-page="detail" hidden>
+      <div class="container" id="detail"></div>
+    </section>
+
+    <!-- ===================== 5. 경험 ===================== -->
+    <section class="page" data-page="experience" hidden>
+      <div class="container">
+        <header class="page-head">
+          <h1>경험</h1>
+          <p>정비 현장, 동아리, 매장 운영에서 맡았던 일입니다.</p>
+        </header>
+
+        <div class="exp-layout">
+          <ol class="timeline" aria-label="경험 타임라인">
+            <li><button type="button" data-jump="exp-airforce"><span class="date">2022.04 ~ 2024.01</span><span>공군 항공장구병</span></button></li>
+            <li><button type="button" data-jump="exp-club"><span class="date">2024.03 ~ 2026.10</span><span>SUAV 동아리</span></button></li>
+            <li><button type="button" data-jump="exp-store"><span class="date">2024.03 ~ 2026.10</span><span>CU 매장 근무</span></button></li>
+          </ol>
+
+          <div class="exp-cards">
+            <article class="exp-card" id="exp-airforce">
+              <header>
+                <h2>공군 제10전투비행단 항공장구병</h2>
+                <p class="meta">2022.04 ~ 2024.01 · 병장 만기전역</p>
+              </header>
+              <dl class="star">
+                <div><dt>상황</dt><dd>F-4 조종사의 산소마스크, 헬멧 바이저와 통신부품, 구명조끼와 하네스를 정비했습니다.</dd></div>
+                <div><dt>행동</dt><dd>비행 1시간 전 점검에서 산소마스크 고무링이 끼어 있는 것을 발견했습니다. 예비품이 없어서 사용하지 않은 마스크의 부품으로 교체하고 다시 시험했습니다.</dd></div>
+                <div><dt>결과</dt><dd>해당 조종사는 예정대로 정상 비행했습니다.</dd></div>
+                <div><dt>배운 점</dt><dd>점검표를 다 채웠는지보다, 실제로 작동하는지를 끝까지 확인하는 습관이 생겼습니다.</dd></div>
+              </dl>
+            </article>
+
+            <article class="exp-card" id="exp-club">
+              <header>
+                <h2>SUAV 교내 항공자작기 동아리</h2>
+                <p class="meta">2024.03 ~ 2026.10 · 부원</p>
+              </header>
+              <dl class="star">
+                <div><dt>활동</dt><dd>CATIA V5 Part, Assembly, Generative design 스터디와 3D 프린터 출력 실습을 했습니다.</dd></div>
+                <div><dt>학습</dt><dd>항공역학(안정성, 기체 구조, XFOIL 해석) 스터디에 참여하고 보조 도우미를 맡았습니다.</dd></div>
+                <div><dt>연결</dt><dd>여기서 익힌 CATIA와 출력 경험이 자이로콥터 대회 로터 허브 제작에 도움이 됐습니다.</dd></div>
+              </dl>
+              <a class="btn btn-ghost btn-sm" href="#/projects/gyrocopter">자이로콥터 대회 보기</a>
+            </article>
+
+            <article class="exp-card" id="exp-store">
+              <header>
+                <h2>CU 도봉그린점</h2>
+                <p class="meta">2024.03 ~ 2026.10 (2년 7개월) · 점원, 주말 새벽</p>
+              </header>
+              <dl class="star">
+                <div><dt>업무</dt><dd>상품 발주, 매장 청결, 상품 관리를 맡았습니다.</dd></div>
+                <div><dt>행동</dt><dd>잘 팔리지 않는 상품을 다른 상품으로 바꾸자고 제안했습니다. 쇼케이스에 물이 새는 원인을 찾아보니 응축수 배수구에 먼지가 막혀 있었습니다.</dd></div>
+                <div><dt>결과</dt><dd>상품 교체 후 매출이 조금 나아졌다는 말을 들었고, 누수는 배수구 청소로 해결했습니다.</dd></div>
+              </dl>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. 역량 ===================== -->
+    <section class="page" data-page="skills" hidden>
+      <div class="container">
+        <header class="page-head">
+          <h1>역량</h1>
+          <p>툴마다 실제로 쓴 프로젝트를 연결했습니다.</p>
+        </header>
+        <div class="chips" role="group" aria-label="역량 그룹으로 이동">
+          <button type="button" class="chip" data-jump="sk-design">설계, 모델링</button>
+          <button type="button" class="chip" data-jump="sk-sim">해석, 시뮬레이션</button>
+          <button type="button" class="chip" data-jump="sk-ctrl">비행제어, 자율비행</button>
+        </div>
+        <p class="note">숙련도는 초안 값입니다. 본인 기준으로 수정하세요.</p>
+
+        <section class="skill-group" id="sk-design">
+          <h2 class="sec-title">설계, 모델링</h2>
+          <div class="table-wrap">
+            <table class="skill-table">
+              <thead><tr><th>툴</th><th>숙련도</th><th>사용한 프로젝트</th></tr></thead>
+              <tbody>
+                <tr><td>CATIA V5, 3DEXPERIENCE</td><td><span class="level" data-level="3">상</span></td><td><a href="#/projects/gyrocopter">자이로콥터</a> <a href="#/projects/water-rocket">물로켓</a> <a href="#/projects/f450-landing">F450 정밀착륙</a></td></tr>
+                <tr><td>3D 프린팅 (PLA, TPU)</td><td><span class="level" data-level="2">중</span></td><td><a href="#/projects/gyrocopter">자이로콥터</a> <a href="#/projects/water-rocket">물로켓</a></td></tr>
+                <tr><td>Fusion</td><td><span class="level" data-level="1">하</span></td><td>개인 학습</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="skill-group" id="sk-sim">
+          <h2 class="sec-title">해석, 시뮬레이션</h2>
+          <div class="table-wrap">
+            <table class="skill-table">
+              <thead><tr><th>툴</th><th>숙련도</th><th>사용한 프로젝트</th></tr></thead>
+              <tbody>
+                <tr><td>MATLAB / Simulink, Stateflow</td><td><span class="level" data-level="3">상</span></td><td><a href="#/projects/f450-autopilot">F450 자동비행</a> <a href="#/projects/coursework">F-16 트림</a> <a href="#/projects/water-rocket">물로켓</a></td></tr>
+                <tr><td>Gazebo (PX4 SITL)</td><td><span class="level" data-level="2">중</span></td><td><a href="#/projects/f450-landing">F450 정밀착륙</a></td></tr>
+                <tr><td>OpenRocket, XFLR5</td><td><span class="level" data-level="2">중</span></td><td><a href="#/projects/water-rocket">물로켓</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="skill-group" id="sk-ctrl">
+          <h2 class="sec-title">비행제어, 자율비행</h2>
+          <div class="table-wrap">
+            <table class="skill-table">
+              <thead><tr><th>툴</th><th>숙련도</th><th>사용한 프로젝트</th></tr></thead>
+              <tbody>
+                <tr><td>PX4, QGroundControl</td><td><span class="level" data-level="2">중</span></td><td><a href="#/projects/f450-landing">F450 정밀착륙</a></td></tr>
+                <tr><td>ROS2</td><td><span class="level" data-level="2">중</span></td><td><a href="#/projects/f450-landing">F450 정밀착륙</a></td></tr>
+                <tr><td>Python (OpenCV)</td><td><span class="level" data-level="2">중</span></td><td><a href="#/projects/f450-landing">F450 정밀착륙</a></td></tr>
+                <tr><td>Arduino</td><td><span class="level" data-level="2">중</span></td><td><a href="#/projects/water-rocket">물로켓</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="sec-title">교육 이수</h2>
+          <ul class="plain-list">
+            <li><strong>렛유인 방위산업 실무 과정 (신뢰도)</strong> 2026.10 ~ 2026.11</li>
+            <li><strong>드론 비행 실습</strong> 신한글로벌인재교육원 6.3시간, 26kg 방역드론 실습</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <!-- ===================== 7. 직무 적합성 ===================== -->
+    <section class="page" data-page="fit" hidden>
+      <div class="container">
+        <header class="page-head">
+          <h1>직무 적합성</h1>
+          <p>기계시스템설계와 무인기개발에 필요한 역량을 프로젝트로 증명합니다.</p>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="지원 직무">
+          <button type="button" role="tab" id="tab-design" aria-controls="panel-design" aria-selected="true">기계시스템설계</button>
+          <button type="button" role="tab" id="tab-uav" aria-controls="panel-uav" aria-selected="false" tabindex="-1">무인기개발</button>
+        </div>
+
+        <div class="tab-panel" id="panel-design" role="tabpanel" aria-labelledby="tab-design">
+          <div class="table-wrap">
+            <table class="fit-table">
+              <thead><tr><th>요구 역량</th><th>내 근거</th><th>수치</th><th></th></tr></thead>
+              <tbody>
+                <tr><td>3D 모델링, 메커니즘 설계</td><td>자이로콥터 티터링 로터 허브, 롤링 마운트 설계</td><td>코닝각 1.5°, 틸트 ±3°</td><td><a class="btn btn-ghost btn-sm" href="#/projects/gyrocopter">보기</a></td></tr>
+                <tr><td>강도, 구조 검토</td><td>물로켓 탱크 응력 검토, 절단 재접합안 기각</td><td>후프응력 38.81MPa (PET 89.7MPa 이내)</td><td><a class="btn btn-ghost btn-sm" href="#/projects/water-rocket">보기</a></td></tr>
+                <tr><td>질량 특성 계산</td><td>실측 질량을 CATIA 밀도로 넣어 CG, 관성 계산</td><td>물로켓 CG 257mm, F450 1.345kg</td><td><a class="btn btn-ghost btn-sm" href="#/projects/f450-landing">보기</a></td></tr>
+                <tr><td>경량화 설계</td><td>파트 통합과 불필요 부품 제거</td><td>1.3kg → 1.0kg</td><td><a class="btn btn-ghost btn-sm" href="#/projects/gyrocopter">보기</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="panel-uav" role="tabpanel" aria-labelledby="tab-uav" hidden>
+          <div class="table-wrap">
+            <table class="fit-table">
+              <thead><tr><th>요구 역량</th><th>내 근거</th><th>수치</th><th></th></tr></thead>
+              <tbody>
+                <tr><td>비행 동역학 모델링</td><td>F450 모터, 공력, 6자유도 Simulink 모델</td><td>모터 시간상수 0.0296s, 호버 559.1rad/s</td><td><a class="btn btn-ghost btn-sm" href="#/projects/f450-autopilot">보기</a></td></tr>
+                <tr><td>비행제어 설계</td><td>위치, 고도, 자세 캐스케이드 제어와 Stateflow 미션</td><td>기울기 ±30° 제한, 웨이포인트 2개 미션</td><td><a class="btn btn-ghost btn-sm" href="#/projects/f450-autopilot">보기</a></td></tr>
+                <tr><td>자율비행 SW, 시뮬레이션</td><td>PX4 SITL, ROS2, Gazebo 드론과 로버 모델</td><td>서스펜션 스트로크 35mm 등 조인트 정의</td><td><a class="btn btn-ghost btn-sm" href="#/projects/f450-landing">보기</a></td></tr>
+                <tr><td>비전 센서</td><td>실제 웹캠 ChArUco 보정, 보정값을 시뮬레이션에 반영</td><td>RMS 0.0989px</td><td><a class="btn btn-ghost btn-sm" href="#/projects/f450-landing">보기</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <section class="section">
+          <h2 class="sec-title">입사 후 계획</h2>
+          <div class="three-col">
+            <div class="info-card todo"><h3>1년차</h3><p>(작성 예정) 목표와 구체적인 행동 한 줄</p></div>
+            <div class="info-card todo"><h3>3년차</h3><p>(작성 예정) 목표와 구체적인 행동 한 줄</p></div>
+            <div class="info-card todo"><h3>5년차</h3><p>(작성 예정) 목표와 구체적인 행동 한 줄</p></div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- ===================== 8. 연락처 ===================== -->
+    <section class="page" data-page="contact" hidden>
+      <div class="container">
+        <header class="page-head">
+          <h1>연락처</h1>
+          <p>편하게 연락 주세요.</p>
+        </header>
+
+        <div class="three-col">
+          <div class="info-card contact-card">
+            <h3>이력서</h3>
+            <p>PDF</p>
+            <a class="btn btn-primary btn-sm" data-resume href="#" target="_blank" rel="noopener">다운로드</a>
+          </div>
+          <div class="info-card contact-card">
+            <h3>GitHub</h3>
+            <p data-github-label>sjuaero</p>
+            <a class="btn btn-ghost btn-sm" data-github href="#" target="_blank" rel="noopener">바로가기</a>
+          </div>
+          <div class="info-card contact-card">
+            <h3>이메일</h3>
+            <p data-email-label></p>
+            <button type="button" class="btn btn-ghost btn-sm" id="copy-email">주소 복사</button>
+          </div>
+        </div>
+
+        <section class="section">
+          <h2 class="sec-title">메일 보내기</h2>
+          <form id="contact-form" class="form" novalidate>
+            <div class="form-row">
+              <label>이름<input name="name" type="text" autocomplete="name" placeholder="홍길동"></label>
+              <label>회사명<input name="company" type="text" autocomplete="organization" placeholder="회사명"></label>
+            </div>
+            <label>이메일<input name="email" type="email" autocomplete="email" placeholder="name@company.com"></label>
+            <label>내용<textarea name="message" rows="6" placeholder="문의 내용을 적어 주세요"></textarea></label>
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+            <div class="form-actions">
+              <span class="note">보내기를 누르면 메일 앱이 열립니다.</span>
+              <button type="submit" class="btn btn-primary">보내기</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <!-- 공통 다음 행동 배너 -->
+    <aside class="next-banner" aria-label="다음 행동">
+      <div class="container next-inner">
+        <p id="next-text">다음으로 프로젝트를 확인해 보세요</p>
+        <a class="btn btn-primary" id="next-btn" href="#/projects">프로젝트 보기</a>
+      </div>
+    </aside>
+  </main>
+
+  <!-- 공통 푸터 -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a data-email-link href="#">이메일</a>
+        <a data-github href="#" target="_blank" rel="noopener">GitHub</a>
+        <a data-resume href="#" target="_blank" rel="noopener">이력서 PDF</a>
+      </div>
+      <p>© <span id="year"></span> Choi Won Bin</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
